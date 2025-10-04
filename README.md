@@ -4,6 +4,8 @@ This repository contains my journey of learning and revising JavaScript from scr
 
 Progress:
 - Day 1: Variables, Data Types, Operators, Console.log, Objects, Arrays and Mini Login Form
+- Day 2: Functions (declaration, expression, arrow functions), Conditional Statements (if/else, switch, ternary), 
+         Loops (for, while, for...of, for...in, do...while, break, continue), and a Mini Calculator Project (using functions and conditionals).
 
 Goals:
 - Build a strong foundation in JavaScript
