@@ -7,7 +7,9 @@ Progress:
 - Day 2: Functions (declaration, expression, arrow functions), Conditional Statements (if/else, switch, ternary), 
          Loops (for, while, for...of, for...in, do...while, break, continue), and a Mini Calculator Project (using functions and conditionals).
 - Day 3: Strings & String Methods, Numbers & Math (round, floor, ceil, pow, sqrt, random), Mini Projects 
-         (Word Counter, Guess the Number   Game, and Calculator with basic operations)
+         (Word Counter, Guess the Number Game, and Calculator with basic operations)
+- Day 4: Arrays Deep Dive - Array Basics, Accessing Elements, Mutating & Non-Mutating Methods (push, pop, splice, slice, concat, spread),
+         Iteration Methods (forEach, map, filter, reduce), Searching (find, findIndex, includes), Sorting, Copying Arrays, and Practice Exercises (remove duplicates, squares, filtering/sorting users, flatten nested arrays).
 
 
 Goals:
