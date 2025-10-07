@@ -8,6 +8,7 @@ Progress:
          Loops (for, while, for...of, for...in, do...while, break, continue), and a Mini Calculator Project (using functions and conditionals).
 - Day 3: Strings & String Methods, Numbers & Math (round, floor, ceil, pow, sqrt, random), Mini Projects 
          (Word Counter, Guess the Number Game, and Calculator with basic operations)
+<<<<<<< HEAD
 - Day 4: Arrays Deep Dive - Array Basics, Accessing Elements, Mutating & Non-Mutating Methods (push, pop, splice, slice, concat,
          spread), Iteration Methods (forEach, map, filter, reduce), Searching (find, findIndex, includes), Sorting, Copying Arrays, and Practice Exercises (remove duplicates, squares, filtering/sorting users, flatten nested arrays).
 - Day 5: Revision of Day 3 & Day 4 (Strings, Arrays & Objects)
@@ -15,6 +16,11 @@ Progress:
          Looping through Objects, Arrays of Objects, and Copying Objects using Spread Operator.
 - Day 7: Day 7: Revision & Practice – Objects recap (properties, methods, this, nested objects, loops, 
          Object.keys/values   entries), shallow vs deep copy, bind() usage, and a Bank Account mini project.
+=======
+- Day 4: Arrays Deep Dive - Array Basics, Accessing Elements, Mutating & Non-Mutating Methods (push, pop, splice, slice, concat, spread),
+         Iteration Methods (forEach, map, filter, reduce), Searching (find, findIndex, includes), Sorting, Copying Arrays, and Practice Exercises (remove duplicates, squares, filtering/sorting users, flatten nested arrays).
+- Day 5: Revision of Day 3 & Day 4 (Strings, Arrays & Objects)
+>>>>>>> b9c3090 (Day 5: Revision of Day 3 & Day 4 (Strings, Arrays & Objects))
 
 
 Goals:
