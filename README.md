@@ -16,7 +16,6 @@ Progress:
 - Day 7: Day 7: Revision & Practice – Objects recap (properties, methods, this, nested objects, loops, 
          Object.keys/values entries), shallow vs deep copy, bind() usage, and a Bank Account mini project.
 
-
 Goals:
 - Build a strong foundation in JavaScript 
 - Strengthen and revise previously learned concepts
