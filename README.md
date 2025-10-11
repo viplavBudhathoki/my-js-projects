@@ -15,6 +15,9 @@ Progress:
          Looping through Objects, Arrays of Objects, and Copying Objects using Spread Operator.
 - Day 7: Revision & Practice – Objects recap (properties, methods, this, nested objects, loops, 
          Object.keys/values entries), shallow vs deep copy, bind() usage, and a Bank Account mini project.
+- Day 8: DOM Basics — getElementById, querySelector, innerText, textContent, innerHTML, createElement, appendChild, 
+         classList, event listeners and delegation.
+
 
 Goals:
 - Build a strong foundation in JavaScript 
