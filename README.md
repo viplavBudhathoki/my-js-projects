@@ -13,7 +13,7 @@ Progress:
 - Day 5: Revision of Day 3 & Day 4 (Strings, Arrays & Objects)
 - Day 6: Objects Deep Dive – Properties, Methods, `this` keyword, Nested Objects, Object.keys(), Object.values(), Object.entrie(),
          Looping through Objects, Arrays of Objects, and Copying Objects using Spread Operator.
-- Day 7: Day 7: Revision & Practice – Objects recap (properties, methods, this, nested objects, loops, 
+- Day 7: Revision & Practice – Objects recap (properties, methods, this, nested objects, loops, 
          Object.keys/values entries), shallow vs deep copy, bind() usage, and a Bank Account mini project.
 
 Goals:
