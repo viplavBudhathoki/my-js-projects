@@ -17,6 +17,8 @@ Progress:
          Object.keys/values entries), shallow vs deep copy, bind() usage, and a Bank Account mini project.
 - Day 8: DOM Basics — getElementById, querySelector, innerText, textContent, innerHTML, createElement, appendChild, 
          classList, event listeners and delegation.
+- Day 9 & 10: Advanced DOM & To-Do App – element selection, attributes, dataset, classList, creating/replacing/removing 
+              elements, event handling, add/delete tasks, task counter, hide/show form, clear all, event delegation 
 
 
 Goals:
