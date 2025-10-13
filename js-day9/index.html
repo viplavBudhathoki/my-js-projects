@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+    h2 {
+      text-align: center;
+    }
+    #formContainer {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+      justify-content: center;
+    }
+    input[type="text"] {
+      padding: 6px;
+      flex: 1;
+    }
+    button {
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 8px 10px;
+      background: #fff;
+      margin-bottom: 6px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    li.active {
+      background: #d1e7ff;
+    }
+    .delete-btn {
+      background: #ff4d4d;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      padding: 4px 8px;
+      cursor: pointer;
+    }
+    #clearAllBtn {
+      margin-top: 10px;
+      background: #333;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>To-Do App</h2>
+
+  <div id="formContainer">
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addTaskBtn">Add</button>
+    <button id="hideFormBtn">Hide Form</button>
+  </div>
+
+  <p>Total Tasks: <span id="taskCounter">0</span></p>
+
+  <ul id="taskList"></ul>
+
+  <button id="clearAllBtn">Clear All</button>
+
+  <script>
+    // Grab elements
+    const taskInput = document.getElementById('taskInput');
+    const addTaskBtn = document.getElementById('addTaskBtn');
+    const taskList = document.getElementById('taskList');
+    const taskCounter = document.getElementById('taskCounter');
+    const hideFormBtn = document.getElementById('hideFormBtn');
+    const formContainer = document.getElementById('formContainer');
+    const clearAllBtn = document.getElementById('clearAllBtn');
+
+    // Update task counter
+    function updateCounter() {
+      taskCounter.textContent = taskList.children.length;
+    }
+
+    // Add new task
+    function addTask() {
+      const taskText = taskInput.value.trim();
+      if(!taskText) return alert("Task cannot be empty!");
+
+      const li = document.createElement('li');
+
+      const span = document.createElement('span');
+      span.textContent = taskText;
+      li.appendChild(span);
+
+      const deleteBtn = document.createElement('button');
+      deleteBtn.textContent = "X";
+      deleteBtn.classList.add('delete-btn');
+      li.appendChild(deleteBtn);
+
+      taskList.appendChild(li);
+      taskInput.value = "";
+      updateCounter();
+    }
+
+    // Add task on button click
+    addTaskBtn.addEventListener('click', addTask);
+
+    // Add task on Enter key
+    taskInput.addEventListener('keydown', (e) => {
+      if(e.key === 'Enter') addTask();
+    });
+
+    // Delete task using event delegation
+    taskList.addEventListener('click', (e) => {
+      if(e.target.classList.contains('delete-btn')) {
+        e.target.parentElement.remove();
+        updateCounter();
+      }
+    });
+
+    // Hide/show form
+    hideFormBtn.addEventListener('click', () => {
+      formContainer.classList.toggle('hidden');
+    });
+
+    // Clear all tasks
+    clearAllBtn.addEventListener('click', () => {
+      taskList.innerHTML = "";
+      updateCounter();
+    });
+  </script>
+
+</body>
+</html>
